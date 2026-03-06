@@ -13,7 +13,10 @@
 <!-- FontAwesome -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
+
 </head>
+
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 
 <body>
 
@@ -414,6 +417,36 @@ Un service que je recommande sans hésiter.
 </div>
 </section>
 
+<!-- ================= CONTACT ================= -->
+
+<section id="contact">
+    
+    <h2 class="section_title" data-lang="contact_title">Contactez-nous</h2>
+
+    <form id="contact-form">
+
+<input type="text" name="from_name" placeholder="Nom complet" data-lang-placeholder="contact_name" required>
+<input type="email" name="from_email" placeholder="Email" data-lang-placeholder="contact_email" required>
+<input type="tel" name="phone" placeholder="Téléphone" data-lang-placeholder="contact_phone">
+<input type="text" name="city" placeholder="Ville / Localité" data-lang-placeholder="contact_city">
+
+<select name="service" data-lang-placeholder="contact_service">
+    <option value="">{{translations[currentLang].contact_service}}</option>
+<option>Nettoyage maison</option>
+<option>Nettoyage bureaux</option>
+<option>Nettoyage chantier</option>
+<option>Nettoyage vitres</option>
+<option>Nettoyage industriel</option>
+
+</select>
+
+<textarea name="message" placeholder="Votre message" data-lang-placeholder="contact_message"></textarea>
+<button type="submit" data-lang="contact_send">Envoyer</button>
+
+</form>
+
+</section>
+
 <!-- ================= SITE CREATOR ================= -->
 
 <section class="creator-section">
@@ -449,6 +482,62 @@ Voir mon site officiel
 </div>
 
 </section>
+
+<!-- ================= FOOTER PREMIUM ================= -->
+<footer class="footer">
+
+    <!-- Logo & Slogan -->
+    <div class="footer-top">
+        <h2 class="footer-logo">CleanPro Services</h2>
+        <p class="footer-slogan">Votre propreté, notre priorité</p>
+    </div>
+
+    <!-- Menu rapide -->
+    <div class="footer-menu">
+        <a href="#hero">Accueil</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+        <a>FAQ</a>
+    </div>
+
+    <!-- Coordonnées -->
+    <div class="footer-contact">
+        <p>Email : contact@cleanpro.com | Téléphone : +33 6 12 34 56 78</p>
+        <p>Adresse : 123 Rue Propre, 75000 Paris, France</p>
+    </div>
+
+    <!-- Newsletter -->
+    <div class="footer-newsletter">
+        <p>Abonnez-vous à notre newsletter :</p>
+        <br>
+        <form>
+            <input type="email" placeholder="Votre email" required>
+            <button type="submit">S’abonner</button>
+        </form>
+    </div>
+
+    <!-- Réseaux sociaux -->
+    <div class="footer-social">
+        <a target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a target="_blank"><i class="fab fa-twitter"></i></a>
+        <a target="_blank"><i class="fab fa-instagram"></i></a>
+        <a target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+
+    <!-- Copyright -->
+    <p class="footer-copy">© 2026 CleanPro Services - Tous droits réservés</p>
+
+</footer>
+
+<!-- Font Awesome pour les icônes -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+<!-- Lien Font Awesome pour les icônes -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+<!-- JS -->
+
+
 
 
 <!-- JS -->

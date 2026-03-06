@@ -723,3 +723,286 @@ cursor:pointer;
     color: #2e7d7d;
 }
 
+/* ================= CONTACT ================= */
+
+/* ================= CONTACT SECTION ================= */
+
+#contact{
+    padding: 80px 20px;
+    background: #f4f7f9; /* fond léger */
+    text-align: center;
+}
+
+/* Titre de la section */
+
+.section_title{
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #2e7d32; /* vert */
+}
+
+
+/* ================= FORMULAIRE ================= */
+
+#contact-form{
+    max-width: 600px;
+    margin: auto; /* centre le formulaire */
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* espace entre les champs */
+}
+
+
+/* ================= INPUTS / SELECT / TEXTAREA ================= */
+
+#contact-form input,
+#contact-form select,
+#contact-form textarea{
+
+    width: 100%;
+    padding: 14px 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    font-family: inherit;
+    transition: all 0.3s ease;
+
+}
+
+
+/* Effet focus lorsque l'utilisateur clique */
+
+#contact-form input:focus,
+#contact-form select:focus,
+#contact-form textarea:focus{
+
+    border-color: #007bff; /* bleu */
+    outline: none;
+    box-shadow: 0 0 5px rgba(0,123,255,0.3);
+
+}
+
+
+/* Zone message */
+
+#contact-form textarea{
+    min-height: 120px;
+    resize: vertical;
+}
+
+
+/* ================= BOUTON ================= */
+
+#contact-form button{
+
+    background: #1E88E5; /* vert */
+    color: white;
+    border: none;
+    padding: 14px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}
+
+
+/* Hover bouton */
+
+#contact-form button:hover{
+
+    background: #1b5e20; /* vert plus foncé */
+    transform: translateY(-2px);
+
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width:768px){
+
+    .section_title{
+        font-size: 26px;
+    }
+
+    #contact{
+        padding: 60px 15px;
+    }
+
+    #contact-form{
+        gap: 12px;
+    }
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width:480px){
+
+    #contact-form input,
+    #contact-form select,
+    #contact-form textarea{
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    #contact-form button{
+        font-size: 15px;
+    }
+
+}
+
+/* Messages succès / erreur */
+.form-success{
+    background: #2e7d32; /* vert */
+    color: white;
+    padding: 12px 15px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.form-error{
+    background: #d32f2f; /* rouge */
+    color: white;
+    padding: 12px 15px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Animation notification */
+.form-success, .form-error {
+    opacity: 0;
+    transform: translateY(-10px);
+    animation: fadeSlide 0.5s forwards;
+}
+
+@keyframes fadeSlide{
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ================= FOOTER PREMIUM ================= */
+
+.footer{
+    background: linear-gradient(90deg,#2e7d32,#1b5e20);
+    color:white;
+    padding:50px 20px;
+    text-align:center;
+    font-family: Arial, sans-serif;
+}
+
+.footer a{
+    color:white;
+    text-decoration:none;
+    margin:0 12px;
+    transition: color 0.3s;
+}
+
+.footer a:hover{
+    color:#ffeb3b; /* jaune pour effet hover */
+}
+
+.footer-top{
+    margin-bottom:30px;
+}
+
+.footer-logo{
+    font-size:28px;
+    margin-bottom:5px;
+    font-weight:bold;
+}
+
+.footer-slogan{
+    font-size:16px;
+    color:#c8e6c9; /* vert clair */
+}
+
+.footer-menu{
+    margin-bottom:25px;
+}
+
+.footer-contact p{
+    margin:5px 0;
+    font-size:14px;
+}
+
+.footer-newsletter{
+    margin:25px 0;
+}
+
+.footer-newsletter input{
+    padding:10px;
+    border-radius:6px 0 0 6px;
+    border:none;
+    width:220px;
+    max-width:70%;
+}
+
+.footer-newsletter button{
+    padding:10px 20px;
+    border:none;
+    border-radius:0 6px 6px 0;
+    background:#ffeb3b;
+    color:#2e7d32;
+    cursor:pointer;
+    transition: background 0.3s;
+}
+
+.footer-newsletter button:hover{
+    background:#fdd835;
+}
+
+.footer-social a{
+    font-size:20px;
+    margin:0 10px;
+    display:inline-block;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.footer-social a:hover{
+    transform: scale(1.2);
+    color:#ffeb3b;
+}
+
+.footer-copy{
+    margin-top:30px;
+    font-size:12px;
+    color:#c8e6c9;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width:768px){
+    .footer-newsletter input{
+        width:150px;
+    }
+}
+
+@media (max-width:480px){
+    .footer-menu{
+        display:flex;
+        flex-direction:column;
+        gap:8px;
+    }
+
+    .footer-social a{
+        margin:0 5px;
+    }
+
+    .footer-newsletter input{
+        width:100%;
+        margin-bottom:10px;
+    }
+
+    .footer-newsletter button{
+        width:100%;
+        border-radius:6px;
+    }
+}

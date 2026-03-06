@@ -115,6 +115,21 @@ const translations = {
     creator_call: "📞 Appeler",
     creator_whatsapp: "💬 WhatsApp",
     creator_site: "Voir mon site officiel",
+    contact_title: "Contactez-nous",
+    contact_name: "Nom complet",
+    contact_email: "Email",
+    contact_phone: "Téléphone",
+    contact_city: "Ville / Localité",
+    contact_service: "Type de service",
+    contact_service_options: [
+        "Nettoyage maison",
+        "Nettoyage bureaux",
+        "Nettoyage chantier",
+        "Nettoyage vitres",
+        "Nettoyage industriel"
+    ],
+    contact_message: "Votre message",
+    contact_send: "Envoyer"
   },
   en: {
     home: "Home",
@@ -188,7 +203,21 @@ const translations = {
     creator_whatsapp: "💬 WhatsApp",
     creator_site: "View my official website",
 
-    
+    contact_title: "Contact Us",
+    contact_name: "Full Name",
+    contact_email: "Email",
+    contact_phone: "Phone",
+    contact_city: "City / Location",
+    contact_service: "Service Type",
+    contact_service_options: [
+        "Home cleaning",
+        "Office cleaning",
+        "Post-construction cleaning",
+        "Window cleaning",
+        "Industrial cleaning"
+    ],
+    contact_message: "Your message",
+    contact_send: "Send"
     
   },
   es: {
@@ -260,6 +289,21 @@ const translations = {
     creator_call: "📞 Llamar",
     creator_whatsapp: "💬 WhatsApp",
     creator_site: "Ver mi sitio oficial",
+    contact_title: "Contáctanos",
+    contact_name: "Nombre completo",
+    contact_email: "Correo electrónico",
+    contact_phone: "Teléfono",
+    contact_city: "Ciudad / Localidad",
+    contact_service: "Tipo de servicio",
+    contact_service_options: [
+        "Limpieza de casas",
+        "Limpieza de oficinas",
+        "Limpieza post-construcción",
+        "Limpieza de ventanas",
+        "Limpieza industrial"
+    ],
+    contact_message: "Tu mensaje",
+    contact_send: "Enviar"
   },
   yo: {
     home: "Ile",
@@ -333,6 +377,21 @@ const translations = {
     creator_call: "📞 Pe",
     creator_whatsapp: "💬 WhatsApp",
     creator_site: "Wo oju opo wẹẹbu mi",
+    contact_title: "Kan si wa",
+    contact_name: "Orúkọ kikun",
+    contact_email: "Imeeli",
+    contact_phone: "Tẹlifoonu",
+    contact_city: "Ìlú / Àgbègbè",
+    contact_service: "Iru iṣẹ́",
+    contact_service_options: [
+    "Ìmọ́tótó ilé",
+    "Ìmọ́tótó ọfiisi",
+    "Ìmọ́tótó léyìn iṣẹ́ kọ́ńsítírùṣọ̀n",
+    "Ìmọ́tótó ferese",
+    "Ìmọ́tótó ilé-iṣẹ́"
+],
+contact_message: "Ifiranṣẹ rẹ",
+contact_send: "Firanṣẹ"
   },
   goun: {
     home: "Agbaza",
@@ -405,6 +464,21 @@ const translations = {
     creator_call: "📞 Fon",
     creator_whatsapp: "💬 WhatsApp",
     creator_site: "Kpɔ site tɔn un",
+    contact_title: "Kanlin",
+    contact_name: "Agbaza wɛ kpɔn",
+    contact_email: "Email",
+    contact_phone: "Téléfono",
+    contact_city: "Dzɔ / Gbè lɛ",
+    contact_service: "Tɔn wema",
+    contact_service_options: [
+    "Wema dzɔ gbo",
+    "Wema agbado",
+    "Wema chantier",
+    "Wema vitres",
+    "Wema industriel"
+],
+contact_message: "Dzɔ wɛ",
+contact_send: "Kpɔ dzɔ"
   }
 };
 
@@ -436,6 +510,36 @@ function updateTexts() {
       el.textContent = translations[currentLang][key];
     }
   });
+}
+
+function updatePlaceholders() {
+  document.querySelectorAll("[data-lang-placeholder]").forEach(el => {
+    const key = el.getAttribute("data-lang-placeholder");
+    if(translations[currentLang][key]){
+      if(el.tagName.toLowerCase() === "select"){
+        // option principale
+        el.options[0].text = translations[currentLang][key];
+        // options dynamiques
+        const options = translations[currentLang].contact_service_options;
+        for(let i=1; i<el.options.length; i++){
+          el.options[i].text = options[i-1] || el.options[i].text;
+        }
+      } else {
+        el.placeholder = translations[currentLang][key];
+      }
+    }
+  });
+}
+
+// Appelle dans updateTexts()
+function updateTexts() {
+  dataLangElements.forEach(el => {
+    const key = el.getAttribute("data-lang");
+    if (translations[currentLang] && translations[currentLang][key]) {
+      el.textContent = translations[currentLang][key];
+    }
+  });
+  updatePlaceholders();
 }
 
 /* Fonction pour afficher le slide hero */
@@ -521,3 +625,50 @@ overlay.remove();
 
 });
 
+
+/* ================= EMAILJS INITIALISATION ================= */
+
+(function(){
+    emailjs.init("wNZ091NbVmDr9SJzH"); 
+})();
+
+
+/* ================= ENVOI DU FORMULAIRE ================= */
+
+const form = document.getElementById("contact-form");
+
+form.addEventListener("submit", function(event){
+    event.preventDefault();
+    const btn = form.querySelector("button");
+    btn.textContent = "Envoi en cours...";
+
+    emailjs.sendForm("service_qo15ze4", "template_lykcvjq", form)
+    .then(function(){
+        // Création du message success
+        const msg = document.createElement("div");
+        msg.className = "form-success";
+        msg.textContent = "✅ Message envoyé avec succès !";
+        form.prepend(msg);
+
+        // Reset formulaire
+        form.reset();
+        btn.textContent = "Envoyer";
+
+        // Réactiver le bouton
+        btn.textContent = "Envoyer";
+        btn.disabled = false; // ← ici on réactive
+
+        // Faire disparaître après 4 secondes
+        setTimeout(()=> msg.remove(), 4000);
+
+    })
+    .catch(function(error){
+        const msg = document.createElement("div");
+        msg.className = "form-error";
+        msg.textContent = "❌ Erreur lors de l'envoi, réessayez.";
+        form.prepend(msg);
+        btn.textContent = "Envoyer";
+        setTimeout(()=> msg.remove(), 4000);
+        console.error("EmailJS Error:", error);
+    });
+});
