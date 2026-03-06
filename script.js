@@ -97,6 +97,24 @@ const translations = {
     coverage_text1: "Nous intervenons principalement à Cotonou, Porto-Novo et Abomey-Calavi.",
     coverage_text2: "Nous pouvons également nous déplacer sur toute l’étendue du territoire national.",
     coverage_text3: "Si vous êtes hors de ces zones, contactez-nous pour organiser une intervention.",
+    projects_title: "Nos Réalisations",
+    // testimonial
+    testimonials_title: "Avis de Nos Clients",
+    testimonials_intro: "La satisfaction de nos clients est notre priorité. Découvrez les témoignages de ceux qui nous font confiance pour l’entretien et la propreté de leurs espaces.",
+
+    client_role: "Cliente",
+    pro_client_role: "Client Professionnel",
+    private_client_role: "Particulier",
+
+    testimonial1: "Service impeccable et équipe très professionnelle. Le travail est toujours réalisé avec sérieux et efficacité. Je recommande vivement leurs services.",
+    testimonial2: "Notre bureau est toujours parfaitement propre grâce à leur équipe. Un service fiable, ponctuel et très professionnel.",
+    testimonial3: "Très satisfait du nettoyage après chantier. L’équipe a laissé les lieux impeccables. Un service que je recommande sans hésiter.",
+
+    creator_title: "Site conçu par Fabrice Houeto",
+    creator_desc: "Développeur Web passionné, je conçois des sites modernes, rapides et adaptés aux besoins des entreprises, restaurants et entrepreneurs. Mon objectif est d'aider les professionnels à avoir une présence en ligne élégante et efficace. Besoin d’un site web professionnel pour votre entreprise ? Contactez-moi dès aujourd’hui.",
+    creator_call: "📞 Appeler",
+    creator_whatsapp: "💬 WhatsApp",
+    creator_site: "Voir mon site officiel",
   },
   en: {
     home: "Home",
@@ -150,6 +168,27 @@ const translations = {
     coverage_text1: "We mainly operate in Cotonou, Porto-Novo and Abomey-Calavi.",
     coverage_text2: "We can also travel throughout the entire national territory.",
     coverage_text3: "If you are outside these areas, contact us to organize an intervention.",
+    projects_title: "Nuestros Proyectos",
+    projects_title: "Our Projects",
+
+    testimonials_title: "Customer Reviews",
+    testimonials_intro: "Customer satisfaction is our priority. Discover testimonials from those who trust us for the maintenance and cleanliness of their spaces.",
+
+    client_role: "Client",
+    pro_client_role: "Professional Client",
+    private_client_role: "Individual",
+
+    testimonial1: "Excellent service and very professional team. The work is always done with seriousness and efficiency. I highly recommend their services.",
+    testimonial2: "Our office is always perfectly clean thanks to their team. A reliable, punctual and very professional service.",
+    testimonial3: "Very satisfied with the post-construction cleaning. The team left the place spotless. A service I recommend without hesitation.",
+
+    creator_title: "Website designed by Fabrice Houeto",
+    creator_desc: "Passionate web developer, I design modern, fast websites tailored to the needs of businesses, restaurants and entrepreneurs. My goal is to help professionals build an elegant and effective online presence. Need a professional website for your business? Contact me today.",
+    creator_call: "📞 Call",
+    creator_whatsapp: "💬 WhatsApp",
+    creator_site: "View my official website",
+
+    
     
   },
   es: {
@@ -205,6 +244,22 @@ const translations = {
     coverage_text1: "Operamos principalmente en Cotonou, Porto-Novo y Abomey-Calavi.",
     coverage_text2: "También podemos desplazarnos por todo el territorio nacional.",
     coverage_text3: "Si se encuentra fuera de estas zonas, contáctenos para organizar una intervención.",
+    testimonials_title: "Opiniones de Clientes",
+    testimonials_intro: "La satisfacción de nuestros clientes es nuestra prioridad. Descubra los testimonios de quienes confían en nosotros para el mantenimiento y limpieza de sus espacios.",
+
+    client_role: "Cliente",
+    pro_client_role: "Cliente Profesional",
+    private_client_role: "Particular",
+
+    testimonial1: "Servicio impecable y equipo muy profesional. El trabajo siempre se realiza con seriedad y eficiencia. Recomiendo ampliamente sus servicios.",
+    testimonial2: "Nuestra oficina siempre está perfectamente limpia gracias a su equipo. Un servicio confiable, puntual y muy profesional.",
+        testimonial3: "Muy satisfecho con la limpieza después de obra. El equipo dejó el lugar impecable. Un servicio que recomiendo sin dudar.",
+
+    creator_title: "Sitio diseñado por Fabrice Houeto",
+    creator_desc: "Desarrollador web apasionado, diseño sitios modernos, rápidos y adaptados a las necesidades de empresas, restaurantes y emprendedores. Mi objetivo es ayudar a los profesionales a tener una presencia en línea elegante y eficaz. ¿Necesita un sitio web profesional para su empresa? Contácteme hoy.",
+    creator_call: "📞 Llamar",
+    creator_whatsapp: "💬 WhatsApp",
+    creator_site: "Ver mi sitio oficial",
   },
   yo: {
     home: "Ile",
@@ -259,6 +314,25 @@ const translations = {
     coverage_text1: "A ṣiṣẹ julọ ni Cotonou, Porto-Novo ati Abomey-Calavi.",
     coverage_text2: "A tun le rin irin-ajo ka gbogbo ilẹ orilẹ-ede.",
     coverage_text3: "Ti o ba wa ni ita awọn agbegbe wọnyi, kan si wa lati ṣeto iṣẹ.",
+
+    projects_title: "Àwọn iṣẹ́ wa",
+
+    testimonials_title: "Àwọn ìtẹ́lọ́run àwọn oníbàárà wa",
+    testimonials_intro: "Ìtẹ́lọ́run àwọn oníbàárà wa ni àkọ́kọ́ wa. Wo àwọn ìrírí àwọn ẹni tí wọ́n gbẹ́kẹ̀lé wa fún ìtọju àti ìmótótó àwọn àyè wọn.",
+
+    client_role: "Oníbàárà",
+    pro_client_role: "Oníbàárà Ọjọ́gbọn",
+    private_client_role: "Olúkúlùkù",
+
+    testimonial1: "Iṣẹ́ wọn dára gan-an, ẹgbẹ́ wọn sì jẹ́ ọjọ́gbọn gidi. Wọ́n máa ń ṣe iṣẹ́ pẹ̀lú ìtó́kàntó́kànwá àti ìmúlò. Mo ṣeduro iṣẹ́ wọn gidigidi.",
+    testimonial2: "Ọfiisi wa máa ń mọ́ gan-an ọpẹ́ sí ẹgbẹ́ wọn. Iṣẹ́ tí ó dájú, tí ó péye àti ọjọ́gbọn.",
+    testimonial3: "Mo yọ̀ gan-an pẹ̀lú ìmótótó lẹ́yìn iṣẹ́ kọ́ńsítírùṣọ̀n. Wọ́n fi ibi náà sílẹ̀ ní mimọ́ patapata. Mo ṣeduro iṣẹ́ wọn láì ṣe ṣiyemeji.",
+
+    creator_title: "A ṣe àpẹrẹ oju opo wẹẹbu yìí nipasẹ Fabrice Houeto",
+    creator_desc: "Emi jẹ́ olùdàgbàsókè wẹẹbu tí ó ní ìfẹ́ sí iṣẹ́. Mo ń dá àwọn oju opo wẹẹbu igbalode, kíákíá tí ó sì bá a mu pẹ̀lú ìbéèrè àwọn ilé-iṣẹ́, ilé onjẹ àti àwọn oníṣòwò. Ète mi ni láti ràn àwọn akosemose lọ́wọ́ láti ní ìfarahàn wẹẹbu tó lẹ́wa àti tó munadoko. Ṣé o nílò oju opo wẹẹbu ọjọ́gbọn fún ilé-iṣẹ́ rẹ? Kan si mi lónìí.",
+    creator_call: "📞 Pe",
+    creator_whatsapp: "💬 WhatsApp",
+    creator_site: "Wo oju opo wẹẹbu mi",
   },
   goun: {
     home: "Agbaza",
@@ -313,21 +387,39 @@ const translations = {
     coverage_text1: "Mì wá wema kpɔn Cotonou, Porto-Novo kplɛ Abomey-Calavi.",
     coverage_text2: "Mì wá lè yi kplɛ kpɔn Benin blibo.",
     coverage_text3: "Tɔn nɔ yi agbè yì, kanlin mì wá kpɔn wema.",
+    projects_title: "Wema lɛ",
+
+    testimonials_title: "Nudide lɛ tɔn amɛ lɛ",
+    testimonials_intro: "Nudide tɔn amɛ lɛ wɛ nyi kpɔn kpɔn. Kpɔ amɛ lɛ tɔn nuɖoɖo si lɛ gbɛ̀ mì wá wema kplɛ wema klɛ tɔn wɔn nɔ.",
+
+    client_role: "Amɛ",
+    pro_client_role: "Amɛ wema tɔn",
+    private_client_role: "Amɛ kplon",
+
+    testimonial1: "Wema lɛ nyi klɛ gbɛ̀ gbɛ̀ kplɛ amɛ lɛ nyi wema tɔn ganji. Wɔ na wema lɛ kpɔn kpɔn kplɛ klɛ. Un ɖo wema lɛ nyi ganji.",
+    testimonial2: "Agbado mì tɔn na klɛ kpɔn kpɔn kpɔ amɛ lɛ tɔn wema. Wema lɛ nyi dagbe, nyi zɔ́ kplɛ nyi ganji.",
+    testimonial3: "Un ɖo wema chantier tɔn lɛ ganji. Amɛ lɛ na agbè lɛ klɛ kpɔn kpɔn. Un ɖo wema lɛ nyi ganji.",
+
+    creator_title: "Site yì wɛ Fabrice Houeto wɛ sɔ",
+    creator_desc: "Un nyi développeur web si nyi yi kpɔn wema. Un na sɔ site moderne, vɛvɛ kplɛ si na wema lɛ tɔn agbado, restaurant kplɛ entrepreneur lɛ. Nɔn mi wá nyi kpɔn amɛ wema tɔn lɛ na wɔn nɔ internet gbè kpɔn kpɔn. A ɖo site professionnel? Kanlin mi gblɔ lɛ.",
+    creator_call: "📞 Fon",
+    creator_whatsapp: "💬 WhatsApp",
+    creator_site: "Kpɔ site tɔn un",
   }
 };
 
-/* 2️⃣ Hero slider - juste les images, texte dans translations */
+/* Hero slider - juste les images, texte dans translations */
 const heroSlides = [
   { img: "images/hero1.webp" },
   { img: "images/hero2.webp" },
   { img: "images/hero3.webp" }
 ];
 
-/* 3️⃣ Variables globales */
+/* Variables globales */
 let currentSlide = 0;
 let currentLang = "fr";
 
-/* 4️⃣ Elements du DOM */
+/* Elements du DOM */
 const languageSwitcher = document.getElementById("language-switcher");
 const dataLangElements = document.querySelectorAll("[data-lang]");
 const heroImgEls = document.querySelectorAll(".slide");
@@ -336,7 +428,7 @@ const heroTextEl = document.querySelector("[data-lang='hero_text']");
 const heroBtn1El = document.querySelector("[data-lang='hero_btn1']");
 const heroBtn2El = document.querySelector("[data-lang='hero_btn2']");
 
-/* 5️⃣ Fonction pour mettre à jour tous les textes de la page */
+/* Fonction pour mettre à jour tous les textes de la page */
 function updateTexts() {
   dataLangElements.forEach(el => {
     const key = el.getAttribute("data-lang");
@@ -346,7 +438,7 @@ function updateTexts() {
   });
 }
 
-/* 6️⃣ Fonction pour afficher le slide hero */
+/* Fonction pour afficher le slide hero */
 function showHeroSlide(index) {
   // images
   heroImgEls.forEach((imgEl, i) => {
@@ -358,21 +450,21 @@ function showHeroSlide(index) {
   updateTexts();
 }
 
-/* 7️⃣ Slider automatique */
+/* Slider automatique */
 function nextHeroSlide() {
   currentSlide = (currentSlide + 1) % heroSlides.length;
   showHeroSlide(currentSlide);
 }
 setInterval(nextHeroSlide, 4000);
 
-/* 8️⃣ Changement de langue */
+/* Changement de langue */
 languageSwitcher.addEventListener("change", function () {
   currentLang = this.value;
   updateTexts();
   showHeroSlide(currentSlide);
 });
 
-/* 9️⃣ Initialisation */
+/* Initialisation */
 updateTexts();
 showHeroSlide(currentSlide);
 
