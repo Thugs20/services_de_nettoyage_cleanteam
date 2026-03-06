@@ -1,64 +1,105 @@
-
-
-
-
 /* ======================================
-   MENU HAMBURGER MOBILE
+   MENU HAMBURGER
 ====================================== */
 
-const menuToggle = document.querySelector(".menu-toggle");
-const navMenu = document.querySelector("nav ul");
+const hamburger = document.getElementById("hamburger");
+const navMenu = document.getElementById("nav-menu");
 
-if(menuToggle){
-
-menuToggle.addEventListener("click", () => {
+hamburger.addEventListener("click", (e) => {
 
 navMenu.classList.toggle("active");
 
+if(navMenu.classList.contains("active")){
+hamburger.innerHTML = '<i class="fas fa-times"></i>';
+}
+else{
+hamburger.innerHTML = '<i class="fas fa-bars"></i>';
+}
+
+e.stopPropagation();
+
 });
+
+
+// fermer quand on clique ailleurs
+
+document.addEventListener("click", function(e){
+
+if(!navMenu.contains(e.target) && !hamburger.contains(e.target)){
+
+navMenu.classList.remove("active");
+hamburger.innerHTML = '<i class="fas fa-bars"></i>';
 
 }
 
+});
 
 /* ======================================
-   LANGUAGE SWITCHER (GOOGLE TRANSLATE)
+   LANGUAGE SWITCHER
 ====================================== */
+
+const translations = {
+
+fr: {
+home: "Accueil",
+about: "À propos",
+services: "Services",
+why: "Pourquoi nous",
+projects: "Réalisations",
+contact: "Contact"
+},
+
+en: {
+home: "Home",
+about: "About",
+services: "Services",
+why: "Why us",
+projects: "Projects",
+contact: "Contact"
+},
+
+es: {
+home: "Inicio",
+about: "Sobre nosotros",
+services: "Servicios",
+why: "Por qué nosotros",
+projects: "Proyectos",
+contact: "Contacto"
+},
+
+yo: {
+home: "Ile",
+about: "Nipa wa",
+services: "Iṣẹ",
+why: "Idi ti wa",
+projects: "Awọn iṣẹ wa",
+contact: "Kan si wa"
+},
+
+goun: {
+home: "Agbaza",
+about: "Nukọn nù",
+services: "Wema",
+why: "Na mi wá",
+projects: "Wema lɛ",
+contact: "Kanlin"
+}
+
+};
+
 
 const languageSwitcher = document.getElementById("language-switcher");
 
-if(languageSwitcher){
-
 languageSwitcher.addEventListener("change", function(){
 
-let lang = this.value;
+const lang = this.value;
 
-let googleTranslateSelect = document.querySelector(".goog-te-combo");
+document.querySelectorAll("[data-lang]").forEach(element => {
 
-if(googleTranslateSelect){
+const key = element.getAttribute("data-lang");
 
-googleTranslateSelect.value = lang;
-googleTranslateSelect.dispatchEvent(new Event("change"));
-
-}
+element.textContent = translations[lang][key];
 
 });
 
-}
-
-
-
-/* ======================================
-   GOOGLE TRANSLATE INITIALISATION
-====================================== */
-
-function googleTranslateElementInit() {
-
-new google.translate.TranslateElement({
-
-pageLanguage: "fr",
-includedLanguages: "fr,en,es,yo"
-
-}, "google_translate_element");
-
-}
-
+});

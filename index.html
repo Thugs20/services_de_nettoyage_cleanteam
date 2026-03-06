@@ -1,70 +1,79 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>CleanPro Services | Entreprise de Nettoyage</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>CleanPro Services | Entreprise de Nettoyage</title>
 
 <!-- CSS -->
 <link rel="stylesheet" href="style.css">
 
-<!-- FontAwesome pour icônes -->
+<!-- FontAwesome -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
 
-<!-- configuration et lien pour google translate -->
-<div id="google_translate_element" style="display:none;"></div>
-
-<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
 <body>
-    
-</body>
 
 <!-- ================= HEADER ================= -->
 
 <header>
 
-    <div class="container header-container">
+<div class="container header-container">
 
-        <div class="logo">
-            <img id="logo" src="images/logo_cleanpro.png" alt="Logo" title="Logo">
-            <h2>Clean<span>Pro</span></h2>
-        </div>
+<div class="logo">
+<img id="logo" src="images/logo_cleanpro.png" alt="Logo">
+<h2>Clean<span>Pro</span></h2>
+</div>
 
-        <nav>
+<!-- NAV -->
 
-            <ul>
-                <li><a href="#hero">Accueil</a></li>
-                <li><a href="#about">À propos</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#why">Pourquoi nous</a></li>
-                <li><a href="#projects">Réalisations</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+<nav id="nav-menu">
 
-        </nav>
+<ul>
 
-        <!-- Sélecteur de langue -->
-        <select id="language-switcher">
+<li><a href="#hero"><i class="fas fa-home"></i> <span data-lang="home">Accueil</span></a></li>
 
-            <option value="fr">Français</option>
-            <option value="en">English</option>
-            <option value="es">Espagnol</option>
-            <option value="yo">Yoruba</option>
+<li><a href="#about"><i class="fas fa-user"></i> <span data-lang="about">À propos</span></a></li>
 
-        </select>
+<li><a href="#services"><i class="fas fa-broom"></i> <span data-lang="services">Services</span></a></li>
 
-    </div>
+<li><a href="#why"><i class="fas fa-star"></i> <span data-lang="why">Pourquoi nous</span></a></li>
+
+<li><a href="#projects"><i class="fas fa-images"></i> <span data-lang="projects">Réalisations</span></a></li>
+
+<li><a href="#contact"><i class="fas fa-envelope"></i> <span data-lang="contact">Contact</span></a></li>
+
+</ul>
+
+</nav>
+
+<!-- RIGHT SIDE -->
+<div class="right-header">
+
+<select id="language-switcher">
+<option value="fr">Français</option>
+<option value="en">English</option>
+<option value="es">Espagnol</option>
+<option value="yo">Yoruba</option>
+<option value="goun">Goun</option>
+</select>
+
+<!-- HAMBURGER -->
+<div class="hamburger" id="hamburger">
+<i class="fas fa-bars"></i>
+</div>
+
+</div>
+
+</div>
 
 </header>
 
-
 <!-- JS -->
-
 <script src="script.js"></script>
 
-
+</body>
 </html>
