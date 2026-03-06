@@ -237,6 +237,7 @@ background:#f4f4f4;
 display:block;
 }
 
+
 }
 
 /* ================= HERO ================= */
@@ -535,4 +536,113 @@ box-shadow:0 0 30px rgba(0,0,0,0.5);
 cursor:pointer;
 }
 
+/* ================= TESTIMONIALS SECTION ================= */
 
+.testimonials-section{
+    padding: 80px 20px;
+    background: #f9fafb;
+    text-align: center;
+}
+
+.section-title{
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.testimonial-intro{
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 50px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* GRID */
+
+.testimonial-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+    gap: 30px;
+    justify-content: center;
+}
+
+/* CARD */
+
+.testimonial-card{
+    background: white;
+    padding: 30px 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+}
+
+/* IMAGE PROFIL */
+
+.testimonial-img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+/* NOM */
+
+.testimonial-card h3{
+    color: #2e7d32; /* vert */
+    margin-bottom: 5px;
+}
+
+/* ROLE */
+
+.testimonial-role{
+    font-size: 14px;
+    color: #777;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* ETOILES */
+
+.stars{
+    color: #007bff; /* bleu */
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+/* TEXTE */
+
+.testimonial-text{
+    font-size: 15px;
+    color: #444;
+    line-height: 1.6;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width:768px){
+
+    .section-title{
+        font-size: 26px;
+    }
+
+    .testimonial-card{
+        padding: 25px 20px;
+    }
+
+}
+
+@media (max-width:480px){
+
+    .testimonial-img{
+        width: 70px;
+        height: 70px;
+    }
+
+}
