@@ -129,7 +129,17 @@ const translations = {
         "Nettoyage industriel"
     ],
     contact_message: "Votre message",
-    contact_send: "Envoyer"
+    contact_send: "Envoyer",
+    footer_logo: "CleanPro Services",
+    footer_slogan: "Votre propreté, notre priorité",
+    footer_menu_1: "Accueil",
+    footer_menu_2: "Services",
+    footer_menu_3: "Contact",
+    footer_menu_4: "FAQ",
+    footer_newsletter_text: "Abonnez-vous à notre newsletter :",
+    footer_newsletter_placeholder: "Votre email",
+    footer_newsletter_btn: "S’abonner",
+    footer_copy: "© 2026 CleanPro Services - Tous droits réservés"
   },
   en: {
     home: "Home",
@@ -217,7 +227,17 @@ const translations = {
         "Industrial cleaning"
     ],
     contact_message: "Your message",
-    contact_send: "Send"
+    contact_send: "Send",
+    footer_logo: "CleanPro Services",
+    footer_slogan: "Your cleanliness, our priority",
+    footer_menu_1: "Home",
+    footer_menu_2: "Services",
+    footer_menu_3: "Contact",
+    footer_menu_4: "FAQ",
+    footer_newsletter_text: "Subscribe to our newsletter:",
+    footer_newsletter_placeholder: "Your email",
+    footer_newsletter_btn: "Subscribe",
+    footer_copy: "© 2026 CleanPro Services - All rights reserved"
     
   },
   es: {
@@ -303,7 +323,17 @@ const translations = {
         "Limpieza industrial"
     ],
     contact_message: "Tu mensaje",
-    contact_send: "Enviar"
+    contact_send: "Enviar",
+    footer_logo: "CleanPro Services",
+    footer_slogan: "Su limpieza, nuestra prioridad",
+    footer_menu_1: "Inicio",
+    footer_menu_2: "Servicios",
+    footer_menu_3: "Contacto",
+    footer_menu_4: "FAQ",
+    footer_newsletter_text: "Suscríbete a nuestro boletín:",
+    footer_newsletter_placeholder: "Tu correo electrónico",
+    footer_newsletter_btn: "Suscribirse",
+    footer_copy: "© 2026 CleanPro Services - Todos los derechos reservados"
   },
   yo: {
     home: "Ile",
@@ -388,10 +418,20 @@ const translations = {
     "Ìmọ́tótó ọfiisi",
     "Ìmọ́tótó léyìn iṣẹ́ kọ́ńsítírùṣọ̀n",
     "Ìmọ́tótó ferese",
-    "Ìmọ́tótó ilé-iṣẹ́"
+    "Ìmọ́tótó ilé-iṣẹ́",
 ],
 contact_message: "Ifiranṣẹ rẹ",
-contact_send: "Firanṣẹ"
+contact_send: "Firanṣẹ",
+footer_logo: "CleanPro Services",
+    footer_slogan: "Ìmọ́tótó rẹ, àyè wa ni pàtàkì",
+    footer_menu_1: "Ile",
+    footer_menu_2: "Iṣẹ́",
+    footer_menu_3: "Kan si wa",
+    footer_menu_4: "FAQ",
+    footer_newsletter_text: "Forukọsilẹ si ìwé iroyin wa:",
+    footer_newsletter_placeholder: "Imeeli rẹ",
+    footer_newsletter_btn: "Forukọsilẹ",
+    footer_copy: "© 2026 CleanPro Services - Gbogbo ẹtọ wa ni ipamọ"
   },
   goun: {
     home: "Agbaza",
@@ -477,8 +517,18 @@ contact_send: "Firanṣẹ"
     "Wema vitres",
     "Wema industriel"
 ],
-contact_message: "Dzɔ wɛ",
-contact_send: "Kpɔ dzɔ"
+    contact_message: "Dzɔ wɛ",
+    contact_send: "Kpɔ dzɔ",
+    footer_logo: "CleanPro Services",
+    footer_slogan: "Dzɔ dzɔ wɛ, gbɛ wɛ kpɔn",
+    footer_menu_1: "Agbaza",
+    footer_menu_2: "Wema",
+    footer_menu_3: "Kanlin",
+    footer_menu_4: "FAQ",
+    footer_newsletter_text: "Dzɔ dzɔ wɔ newsletter wɛ :",
+    footer_newsletter_placeholder: "Dzɔ wɛ email",
+    footer_newsletter_btn: "Kpɔ dzɔ",
+    footer_copy: "© 2026 CleanPro Services - Tɔn wɛ kpɔn lɛ"
   }
 };
 
