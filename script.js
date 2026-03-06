@@ -400,3 +400,32 @@ navMenu.classList.remove("active");
 
 });
 
+
+/* ======================================
+   LIGHTBOX POUR LES IMAGES
+====================================== */
+
+const galleryImages = document.querySelectorAll(".gallery img");
+
+galleryImages.forEach(img => {
+
+img.addEventListener("click", () => {
+
+const overlay = document.createElement("div");
+overlay.classList.add("lightbox");
+
+const bigImage = document.createElement("img");
+bigImage.src = img.src;
+
+overlay.appendChild(bigImage);
+document.body.appendChild(overlay);
+
+/* fermer en cliquant */
+overlay.addEventListener("click", () => {
+overlay.remove();
+});
+
+});
+
+});
+
