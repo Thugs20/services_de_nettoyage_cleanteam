@@ -82,3 +82,18 @@ font-weight:500;
 nav a:hover{
 color:#1E88E5;
 }
+
+/* LANGUAGE SWITCHER */
+#language-switcher{
+padding:6px 10px;
+border-radius:6px;
+border:1px solid #ccc;
+background:white;
+cursor:pointer;
+font-weight:500;
+transition:0.3s;
+}
+
+#language-switcher:hover{
+border-color:#1E88E5;
+}
