@@ -73,7 +73,17 @@ const translations = {
     service7_title: "Nettoyage écologique",
     service7_text: "Utilisation de produits respectueux de l’environnement pour un nettoyage efficace tout en protégeant votre santé et la planète.",
     service8_title: "Entretien des espaces verts",
-    service8_text: "Nous proposons également un entretien régulier de vos jardins et espaces extérieurs : tonte, désherbage et nettoyage des allées."
+    service8_text: "Nous proposons également un entretien régulier de vos jardins et espaces extérieurs : tonte, désherbage et nettoyage des allées.",
+    // why
+    why_title: "Pourquoi nous choisir",
+    why1_title: "Personnel qualifié",
+    why1_text: "Une équipe formée et expérimentée.",
+    why2_title: "Produits écologiques",
+    why2_text: "Respect de l'environnement et de votre santé.",
+    why3_title: "Équipements modernes",
+    why3_text: "Des outils professionnels pour un nettoyage efficace.",
+    why4_title: "Service rapide",
+    why4_text: "Intervention rapide et flexible.",
   },
   en: {
     home: "Home",
@@ -106,7 +116,17 @@ const translations = {
     service7_title: "Eco-Friendly Cleaning",
     service7_text: "Using environmentally friendly products for effective cleaning while protecting health and the planet.",
     service8_title: "Garden & Green Space Maintenance",
-    service8_text: "We also offer regular garden and outdoor maintenance: mowing, weeding, and path cleaning."
+    service8_text: "We also offer regular garden and outdoor maintenance: mowing, weeding, and path cleaning.",
+    why_title: "Why choose us",
+    why1_title: "Qualified staff",
+    why1_text: "A trained and experienced team.",
+    why2_title: "Eco-friendly products",
+    why2_text: "Respect for the environment and your health.",
+    why3_title: "Modern equipment",
+    why3_text: "Professional tools for effective cleaning.",
+    why4_title: "Fast service",
+    why4_text: "Quick and flexible intervention.",
+    
   },
   es: {
     home: "Inicio",
@@ -139,7 +159,16 @@ const translations = {
     service7_title: "Limpieza ecológica",
     service7_text: "Uso de productos respetuosos con el medio ambiente para una limpieza eficaz y protección de la salud y el planeta.",
     service8_title: "Mantenimiento de jardines y espacios verdes",
-    service8_text: "También ofrecemos mantenimiento regular de jardines y exteriores: corte de césped, deshierbe y limpieza de caminos."
+    service8_text: "También ofrecemos mantenimiento regular de jardines y exteriores: corte de césped, deshierbe y limpieza de caminos.",
+    why_title: "Por qué elegirnos",
+    why1_title: "Personal calificado",
+    why1_text: "Un equipo capacitado y experimentado.",
+    why2_title: "Productos ecológicos",
+    why2_text: "Respeto por el medio ambiente y su salud.",
+    why3_title: "Equipos modernos",
+    why3_text: "Herramientas profesionales para una limpieza eficaz.",
+    why4_title: "Servicio rápido",
+    why4_text: "Intervención rápida y flexible.",
   },
   yo: {
     home: "Ile",
@@ -172,7 +201,16 @@ const translations = {
     service7_title: "Ìmọ́tótó ayika",
     service7_text: "Lilo awọn ọja ore ayika fun mimọ to munadoko ati aabo ilera ati aye.",
     service8_title: "Itọju ọgba & aaye alawọ ewe",
-    service8_text: "A tun nṣe itọju igbagbogbo ti ọgba ati awọn aaye ita: gige koriko, yiyọ ewe ati mimọ awọn ọna."
+    service8_text: "A tun nṣe itọju igbagbogbo ti ọgba ati awọn aaye ita: gige koriko, yiyọ ewe ati mimọ awọn ọna.",
+    why_title: "Kí nìdí tí ẹ fi yẹ kí ẹ yan wa",
+    why1_title: "Oṣiṣẹ to ni oye",
+    why1_text: "Ẹgbẹ ti o ni ikẹkọ ati iriri.",
+    why2_title: "Awọn ọja ore ayika",
+    why2_text: "A bọwọ fun ayika ati ilera rẹ.",
+    why3_title: "Ohun elo igbalode",
+    why3_text: "Awọn irinṣẹ ọjọgbọn fun mimọ to munadoko.",
+    why4_title: "Iṣẹ yarayara",
+    why4_text: "Iṣẹ yarayara ati rọ.",
   },
   goun: {
     home: "Agbaza",
@@ -205,7 +243,16 @@ const translations = {
     service7_title: "Wema ayika",
     service7_text: "Dzɔ́ kpɔn dzɔ̃ kpɛ́ kpli kpɔ̃ dzɔ̃ kplɛ kplɔ̃ kpɔn fɛ kplɔ̃ kpɔ̃ wɛ.",
     service8_title: "Dzɔ́ kplɛ agbado kpli agbala alawọ ewe",
-    service8_text: "Wɛ dzɔ́ klɛ dzɔ̃ kpɔn dzɔ́ agbado kplɛ agbala alawɔ: gige, yiyo dzɔ̃ kpli dzɔ́ kplɔ̃ kpɔ̃."
+    service8_text: "Wɛ dzɔ́ klɛ dzɔ̃ kpɔn dzɔ́ agbado kplɛ agbala alawɔ: gige, yiyo dzɔ̃ kpli dzɔ́ kplɔ̃ kpɔ̃.",
+    why_title: "Na mi wá mì",
+    why1_title: "Ame si do",
+    why1_text: "Ame lɛ si nyi kplɛ nyin.",
+    why2_title: "Nukun tɔn alɔ",
+    why2_text: "Mì wá kpɔn ayika kplɛ ame.",
+    why3_title: "Nukun si do",
+    why3_text: "Nukun wɛ gbà wema klɛ.",
+    why4_title: "Wema vɛvɛ",
+    why4_text: "Wema kpɔn kpɔn kplɛ gblé.",
   }
 };
 
